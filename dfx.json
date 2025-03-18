@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "BloodDonation_backend": {
+      "main": "src/BloodDonation_backend/main.mo",
+      "type": "motoko"
+    },
+    "BloodDonation_frontend": {
+      "dependencies": [
+        "BloodDonation_backend"
+      ],
+      "source": [
+        "src/BloodDonation_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "BloodDonation_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
