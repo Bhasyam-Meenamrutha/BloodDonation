@@ -71,7 +71,7 @@ function App() {
       <main className="main-content">
         <div className="hero-section">
           <img 
-            src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&q=80&w=2000" 
+            src="/bd2.avif" 
             alt="Blood Donation"
             className="hero-image"
           />
@@ -88,7 +88,7 @@ function App() {
               <div className="info-section">
                 <div className="info-card">
                   <img 
-                    src="https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&q=80&w=800" 
+                    src="/bd1.avif" 
                     alt="Blood donation process"
                     className="info-image"
                   />
@@ -97,7 +97,7 @@ function App() {
                 </div>
                 <div className="info-card">
                   <img 
-                    src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&q=80&w=800" 
+                    src="/bd3.avif" 
                     alt="Medical research"
                     className="info-image"
                   />

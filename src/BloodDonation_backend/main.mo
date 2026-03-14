@@ -7,7 +7,7 @@ import Iter "mo:base/Iter";
 import Array "mo:base/Array";
 import Int "mo:base/Int";
 
-actor {
+persistent actor {
       var id:Int = 0;
 
     public type DonorRegistrations = {
@@ -34,7 +34,7 @@ public type DonorRegistration = {
   };
 
 
-  var DonorReg = HashMap.HashMap<Int , DonorRegistration>(0 , Int.equal , Int.hash);
+  transient var DonorReg = HashMap.HashMap<Int , DonorRegistration>(0 , Int.equal , Int.hash);
 
   public func set_Donor_registration(details:DonorRegistrations):async Text{
      var newDonorRegistration = {
@@ -100,7 +100,7 @@ public type RecipientRegistration = {
     rep_id:Int;
   };
 
-    var RecipientReg = HashMap.HashMap<Int , RecipientRegistration>(0 , Int.equal , Int.hash);
+    transient var RecipientReg = HashMap.HashMap<Int , RecipientRegistration>(0 , Int.equal , Int.hash);
 
     public func set_Recipient_registration(details:RecipientRegistrations):async Text{
         var newRecipientRegistration ={
